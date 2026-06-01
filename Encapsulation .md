@@ -23,7 +23,22 @@ To implement **Encapsulation** in Python by defining a class `Rectangle` with **
 ---
 
 ## 💻 Program
+class Student:
+    def __init__(self, name, marks):
+        self.__name = name      # Private member
+        self.__marks = marks    # Private member
 
+    def display(self):
+        print("Name :", self.__name)
+        print("Marks:", self.__marks)
+
+# Object Creation
+s = Student("Arun", 85)
+
+# Accessing private members through a method
+s.display()
 ## Output
-
+Name : Arun
+Marks: 85
 ## Result
+Thus, the Python program demonstrating Encapsulation using Private Members was executed successfully, and the private data members were accessed through a public method.
