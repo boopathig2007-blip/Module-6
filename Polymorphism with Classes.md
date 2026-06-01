@@ -26,7 +26,34 @@ To create two specific classes — `Beans` and `Mango`. Then, create a **generic
 ---
 
 ## 💻 Program
+class Dog:
+    def sound(self):
+        print("Dog barks")
 
+class Cat:
+    def sound(self):
+        print("Cat meows")
+
+class Cow:
+    def sound(self):
+        print("Cow moos")
+
+# Function demonstrating polymorphism
+def animal_sound(animal):
+    animal.sound()
+
+# Object Creation
+d = Dog()
+c = Cat()
+w = Cow()
+
+# Method Calls
+animal_sound(d)
+animal_sound(c)
+animal_sound(w)
 ## Output
-
+Dog barks
+Cat meows
+Cow moos
 ## Result
+Thus, the Python program demonstrating Polymorphism with Classes was executed successfully, and different objects responded to the same method call in their own way.
